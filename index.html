@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ספר טלפונים - הנדסאים</title>
+  <link rel="stylesheet" href="./css3.css">
+</head>
+
+<body>
+
+  <header>
+    <h1> Phone book</h1>
+    <h2>THE NATIONAL SCHOOL FOR HANDASSAIM</h2>
+  </header>
+
+  <main>
+    <section class="controls">
+      <input type="text" placeholder="חיפוש..." class="search-box">
+      <button id="addBtn">➕ הוסף רשומה</button>
+      <button id="deleteAllBtn">🗑️ מחק הכל</button>
+      <button id="effectBtn">🎨 אפקט</button>
+    </section>
+
+    <section class="phonebook">
+      <h3>ספר הטלפונים</h3>
+
+     
+
+      <!-- רשומות -->
+      <ul class="record-list">
+        <li>
+          <span class="name">דנה לוי</span> - <span class="phone">052-5555555</span>
+          <button class="editBtn">✏️ עדכן</button>
+          <button class="deleteBtn">🗑️ מחק</button>
+        </li>
+        <li>
+          <span class="name">יוסי כהן</span> - <span class="phone">050-6666666</span>
+          <button class="editBtn">✏️ עדכן</button>
+          <button class="deleteBtn">🗑️ מחק</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- טופס popup לעדכון/הוספה -->
+  <div class="popup-container hidden" id="popupForm">
+    <div class="popup">
+      <h3>טופס רשומה</h3>
+      <form>
+        <label>שם:</label>
+        <input type="text" name="name" required>
+        <label>טלפון:</label>
+        <input type="tel" name="phone" required>
+        <div class="popup-actions">
+          <button type="submit">שמור</button>
+          <button type="button" id="closePopup">ביטול</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 נכתב על ידי חיים אשרף </p>
+  </footer>
+
+</body>
+
+</html>
