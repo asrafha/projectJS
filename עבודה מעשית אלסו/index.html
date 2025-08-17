@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body class="page-container">
+<header id="header">
+  <h1 id="pbheader"> Phone book  </h1>
+<nav id="headernav">
+ 
+  <a href="#aboutus" class="nava"> About Us</a>
+</nav>
+</header>
+
+<main>
+  <div id="mainDiv">
+    <div>
+      <main id="pbmain">
+        <section>
+          <p class="list-title-enhanced">
+            <i class="fas fa-address-book"></i> רשימת אנשי קשר
+          </p>
+>
+          <p id="addList"></p>
+          <ul id="ListOfPoule">
+        <ul id="ListOfPoule">
+          <li>
+            <strong>שם:</strong> דני כהן |
+            <strong>טלפון:</strong> 050-1234567
+            <button class="showDetails">Show Detels</button>
+            <button class="deleteDetels"> delete deteles</button>
+            <button class="changeDetails">ReEdit details</button>
+        
+            <!-- פרטים מוסתרים -->
+            <div class="hiddenDetails" style="display: none;" data-name="דני כהן" data-phone="050-1234567"
+              data-email="dani@example.com" data-address="תל אביב, ישראל" data-age="32">
+            </div>
+          </li>
+          
+        
+          <li>
+            <strong>שם:</strong> רונית לוי |
+            <strong>טלפון:</strong> 052-7654321
+            <button class="showDetails">Show Detels</button>
+            <button class="deleteDetels"> delete deteles</button>
+            <button class="changeDetails">ReEdit details</button>
+            
+        
+            <div class="hiddenDetails" style="display: none;" data-name="רונית לוי" data-phone="052-7654321"
+              data-email="ronit@example.com" data-address="חיפה, ישראל" data-age="28">
+            </div>
+          </li>
+       
+        </section>
+    </div>
+    <div>
+      <input type="button" id="addName" value="Add Pouple ">
+      <input type="button" id="delName" value="Delete All Pouple">
+    </div>
+  </div>
+
+</main>
+
+<footer>
+<p> javaScript פרוייקט </p>     
+<p>טכניון 2025</p>    
+  <p>חיים אשרף</p>
+
+</footer>
+
+
+<script src="./js.js"></script>
+</body>
+</html>

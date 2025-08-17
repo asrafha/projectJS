@@ -1,0 +1,227 @@
+/* בסיס ונראות כללית */
+body.page-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #eef2f7;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  /* עברית */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* כותרת עליונה */
+header#header {
+  background: linear-gradient(90deg, #2a9df4, #1a6ed8);
+  color: white;
+  padding: 30px 40px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#pbheader {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  user-select: none;
+}
+
+/* ניווט ראשי */
+#headernav {
+  margin-top: 12px;
+}
+
+#headernav .nava {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 18px;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  user-select: none;
+}
+
+#headernav .nava:hover,
+#headernav .nava:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffeb3b;
+  outline: none;
+}
+
+/* תוכן ראשי - מיכל מרכזי */
+#mainDiv {
+  max-width: 720px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(46, 61, 73, 0.1);
+}
+
+/* כותרת רשימת אנשי הקשר */
+.list-title-enhanced {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a6ed8;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  user-select: none;
+}
+
+.list-title-enhanced i {
+  font-size: 2.5rem;
+  color: #2a9df4;
+}
+
+/* שדה חיפוש */
+#searchInput {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  border: 2px solid #a5b1c2;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+#searchInput:focus {
+  border-color: #1a6ed8;
+  box-shadow: 0 0 12px rgba(26, 110, 216, 0.5);
+  outline: none;
+}
+
+/* רשימת אנשי הקשר – כרטיסים */
+#ListOfPoule {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+#ListOfPoule li {
+  background: #f7f9fc;
+  border-radius: 16px;
+  padding: 20px 25px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: background-color 0.3s ease;
+  cursor: default;
+}
+
+#ListOfPoule li:hover {
+  background: #e3eefc;
+}
+
+/* טקסט הפרטים */
+#ListOfPoule li strong {
+  font-weight: 700;
+  color: #34495e;
+  margin-left: 6px;
+  user-select: text;
+}
+
+#ListOfPoule li>div,
+#ListOfPoule li>p {
+  margin: 0;
+}
+
+/* כפתורים */
+#ListOfPoule li button {
+  background: linear-gradient(135deg, #1a6ed8, #2a9df4);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 0 4px 12px rgba(42, 157, 244, 0.5);
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+  user-select: none;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+}
+
+#ListOfPoule li button:hover {
+  background: linear-gradient(135deg, #2a9df4, #1a6ed8);
+  box-shadow: 0 6px 18px rgba(26, 110, 216, 0.7);
+}
+
+/* התאמת כפתורים למובייל */
+@media (max-width: 550px) {
+  #ListOfPoule li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  #ListOfPoule li button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* אזור הכפתורים הראשיים להוספה ומחיקה */
+#mainDiv>div:last-child {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#mainDiv>div:last-child input[type="button"] {
+  background: #ffca28;
+  border: none;
+  color: #444;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 14px 30px;
+  border-radius: 25px;
+  margin: 0 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 202, 40, 0.6);
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+#mainDiv>div:last-child input[type="button"]:hover {
+  background: #f9a825;
+  color: #222;
+  box-shadow: 0 6px 22px rgba(249, 168, 37, 0.8);
+}
+
+/* פוטר */
+footer {
+  background: #1a6ed8;
+  color: white;
+  text-align: center;
+  padding: 24px 0;
+  margin-top: 60px;
+  font-weight: 600;
+  font-size: 1rem;
+  user-select: none;
+  letter-spacing: 0.6px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* פרטים מוסתרים - למקרה שתפתח */
+.hiddenDetails {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-top: 12px;
+  user-select: text;
+}
